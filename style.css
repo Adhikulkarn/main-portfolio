@@ -119,6 +119,7 @@ a{
     position: relative;
     bottom: 195px;
     left: 20px;
+    width: 0px;
 }
 
 #knowMore{
@@ -304,3 +305,75 @@ a{
     }
  }
  
+ @media screen and (max-width: 1080px){
+    body{
+        overflow: hidden;
+    }
+    #port{
+        font-size: 290%;
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+    #abtme{
+        font-size: x-large;
+        position: relative;
+        top: 10px;
+        left: 50px;
+    }
+    #cv{
+        position: relative;
+        left: 8%;
+        top: 10px;
+    }
+    #hi{
+        font-size: 330%;
+        position: relative;
+        right: 870px;
+    }
+    #adi{
+        display: inline-block;
+        font-size: 300%;
+        position: relative;
+        right: 430px;
+        bottom: 390px;
+    }
+    #a{
+        font-size: 330%;
+        position: relative;
+        right: 660px;
+        bottom: 320px;
+    }
+    #eng{
+        font-size: 340%;
+        position: relative;
+        right: 880px;
+        bottom: 260px;
+    }
+    #eng1{
+        font-size: 340%;
+        position: relative;
+        left: -400px;
+        bottom: 280px;
+    }
+    #me{
+        position: relative;
+        top: 370px;
+        left: 80px;
+    }
+    /* #knowMore{
+        position: relative;
+        height: 60px;
+        width: 170px;
+        font-size: 130%;
+        left: 230px;
+        bottom: -200px;
+    } */
+    #info{
+        position: relative;
+        bottom: -400px;
+        left: -500px;
+        font-size: 26px;
+        width: 670px;
+    }
+ }

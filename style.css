@@ -302,7 +302,7 @@ a{
     }
  }
  
- @media screen and (max-width: 1080px){
+ /* @media screen and (max-width: 1080px){
 
     body{
         overflow: hidden;
@@ -421,4 +421,29 @@ a{
         margin: 0%;
         padding: 0%;
     }
- }
+ } */
+
+ /* @media screen and (max-width: 1080px){
+    #port{
+        font-size: 27px;
+        position: relative;
+        top: 10px;
+    }  
+    #abtme{
+        position: relative;
+        top: 8px;
+        left: 35px;
+    }
+    #cv{
+        position: relative;
+        left: 5%;
+        height: 45px;
+        top: 15px;
+        width: 120px;
+        font-size: 90%;
+    }
+    #hi{
+        position: relative;
+
+    }
+ } */

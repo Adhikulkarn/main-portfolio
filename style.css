@@ -75,6 +75,9 @@ a{
     #abtme{
         margin: 5px;
     }
+    .nav{
+        height:55px ;
+    }
 }
 
 @media(max-width:416px){
@@ -88,17 +91,9 @@ a{
         height: 35px;
         width: 80px;
         font-size: 10px;
-    }
-}
-
-@media(max-width:400px){
-    #cv{
         margin: 10px;
     }
-}
-
-@media(max-width:326px){
-    #port{
-        margin: 10px;
+    .nav{
+        height: 50px;
     }
 }

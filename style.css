@@ -43,3 +43,9 @@ a{
 #CV{
     margin-left: auto   ;
 }
+
+@media (max-width:495px) {
+    #port{
+        color: white;
+    }
+}

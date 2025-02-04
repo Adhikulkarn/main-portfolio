@@ -43,6 +43,11 @@ a{
     margin-left: auto   ;
 }
 
+.myimg{
+    display: flex;
+    
+}
+
 @media(max-width:572px){
     .nav{
         width: 100%;

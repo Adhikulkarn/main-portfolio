@@ -57,6 +57,7 @@ a{
     background-color: grey;
     /* width: 500px; */
     align-items: center;
+    justify-content: center;
     position: relative;
     top: 8%;
 }
@@ -105,7 +106,6 @@ a{
     top: 20%;
     border: 2px solid black;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 .box{
@@ -198,5 +198,17 @@ a{
     }
     #intro5{
         font-size: 170%;
+    }
+}
+
+@media(max-width:652px){
+    .eud{
+        max-width: 423px;
+    }
+}
+
+@media(max-width:440px){
+    .eud{
+        max-width: 200px;
     }
 }

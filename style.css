@@ -45,16 +45,58 @@ a{
     margin-left: auto   ;
 }
 
-/* .myimg{
+.body{
     display: flex;
-    
-} */
+    background-color: antiquewhite;
+    height: 650px;
+    flex-direction: column;
+}
 
-#me{
+.intro{
     display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 330px;
+    align-items: center;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 8%;
+}
+
+#intro1{
+    color: white;
+    font-size: 180%;
+}
+#intro2{
+    color: #58DDD6;
+    font-size: 200%;
+    font-weight: bold;
+}
+#intro3{
+    color: white;
+    font-size: 180%;
+}
+#intro4{
+    color: #58DDD6;
+    font-size: 200%;
+    font-weight: bold;
+}
+#intro5{
+    color: #58DDD6;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.para{
+    display: flex;
+    max-width: 550px;
+    background-color: grey;
+    position: relative;
+    top: 15%;
+    align-items: center;
+}
+#paragraph{
+    text-align: center;
+    font-size: 110%;
 }
 
 @media(max-width:572px){
@@ -73,6 +115,9 @@ a{
     }
     #cv{
         height: 40px;
+    }
+    .para{
+        width: ;
     }
 }
 

@@ -116,9 +116,6 @@ a{
     #cv{
         height: 40px;
     }
-    .para{
-        width: ;
-    }
 }
 
 @media(max-width:680px){
@@ -155,13 +152,23 @@ a{
     .nav{
         height: 50px;
     }
+
 }
 
-/* @media(max-width:576px){
-    #me{
-        height: 250px;
-        position: relative;
-        left: 25%;
-        top: 130px;
+@media(max-width:330px){
+    #intro1{
+        font-size: 150%;
     }
-} */
+    #intro2{
+        font-size: 170%;
+    }
+    #intro3{
+        font-size: 150%;
+    }
+    #intro4{
+        font-size: 170%;
+    }
+    #intro5{
+        font-size: 170%;
+    }
+}

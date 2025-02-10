@@ -104,13 +104,16 @@ a{
     /* background-color: grey; */
     position: relative;
     top: 20%;
-    border: 2px solid black;
+    border: 2px solid #58DDD6;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 15px;
 }
 .box{
-    margin: 2px;
+    margin: 20px;
     padding: 2px;
+    border-radius: 9%;
+    display: flex;
 }
 #box1{
     height: 200px;
@@ -201,7 +204,7 @@ a{
     }
 }
 
-@media(max-width:652px){
+/* @media(max-width:652px){
     .eud{
         max-width: 423px;
     }
@@ -211,4 +214,4 @@ a{
     .eud{
         max-width: 200px;
     }
-}
+} */

@@ -229,14 +229,14 @@ a{
     }
 }
 
-/* @media(max-width:652px){
+@media(max-width:782px){
     .eud{
-        max-width: 423px;
+        max-width: 500px;
     }
 }
 
-@media(max-width:440px){
+@media(max-width:535px){
     .eud{
-        max-width: 200px;
+        max-width: 260px;
     }
-} */
+}

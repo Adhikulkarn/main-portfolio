@@ -162,6 +162,47 @@ a{
     width: 200px;
     border: 2px solid black;
 }
+
+.title2{
+    display: flex;
+    position: relative;
+    top: 25%;
+}
+
+#intitle{
+    font-size: 170%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #58DDD6;
+}
+
+#math{
+    position: relative;
+    bottom: 50px;
+}
+
+.other{
+    display: flex;
+    border: 3px solid #58DDD6;
+    position: relative;
+    top: 30%;
+    border-radius: 15px;
+    /* flex-direction: column; */
+}
+.information{
+    margin: 20px;
+    padding: 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 80%;
+    max-width: 700px;
+    border: 2px solid black;
+}
+#clubinfo{
+    margin: 10px;
+}
 @media(max-width:572px){
     .nav{
         width: 100%;

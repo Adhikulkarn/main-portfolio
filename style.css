@@ -228,6 +228,16 @@ a{
 .img:hover{
     transform: scale(1.2);
 }
+#scl{
+    margin: 10px;
+}
+#pu{
+    margin: 10px;
+}
+#clg{
+    margin: 10px;
+}
+
 @media(max-width:572px){
     .nav{
         width: 100%;

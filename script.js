@@ -2,7 +2,7 @@ document.getElementById("cv").addEventListener("click", function() {
     alert("Resume will be uploaded Soon !"); 
 });
 document.getElementById("abtme").addEventListener("click", function() {
-    alert("Blogs Will Be Uploaded Soon"); 
+    alert("Projects Will Be Uploaded Soon"); 
 });
 document.getElementById("linkedin").addEventListener("click", function() {
 window.location.href = "https://www.linkedin.com/in/aditya-kulkarni-577344326";

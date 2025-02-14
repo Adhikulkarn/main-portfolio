@@ -1,4 +1,4 @@
-document.getElementById("insta").addEventListener("click", function() {
+document.getElementById("cv").addEventListener("click", function() {
     window.location.href = "login.html";
 });
 document.getElementById("abtme").addEventListener("click", function() {

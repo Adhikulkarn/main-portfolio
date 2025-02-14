@@ -20,27 +20,41 @@
                 <input type="text" name="Email" placeholder="Email address" class="input" id="Email">
                 <input type="text" name="FirstName" placeholder="First Name" class="input" id="name1">
                 <input type="text" name="SecondName" placeholder="Second Name" class="input" id="name2">
-                <button id="get">Get Resume</button>
+                <button id="get" disabled>Get Resume</button>
             </div>
         </div>
     </div>
 
     <script>
+        function validateInputs() {
+            const email = document.getElementById('Email').value;
+            const firstName = document.getElementById('name1').value;
+            const secondName = document.getElementById('name2').value;
+            const getButton = document.getElementById('get');
+
+            // Enable the button only if all fields are filled
+            getButton.disabled = !(email && firstName && secondName);
+        }
+
+        document.getElementById('Email').addEventListener('input', validateInputs);
+        document.getElementById('name1').addEventListener('input', validateInputs);
+        document.getElementById('name2').addEventListener('input', validateInputs);
+
         document.getElementById('get').addEventListener('click', function() {
             const email = document.getElementById('Email').value;
             const firstName = document.getElementById('name1').value;
             const secondName = document.getElementById('name2').value;
 
-            // Store the information in local storage
-            const userInfo = {
-                email: email,
-                firstName: firstName,
-                secondName: secondName,
-            };
+            // Retrieve existing user list or initialize an empty array
+            let userInfoList = JSON.parse(localStorage.getItem('userInfoList')) || [];
 
-            localStorage.setItem('userInfo', JSON.stringify(userInfo));
+            // Add new user info to the list
+            userInfoList.push({ email, firstName, secondName });
 
-            alert('Resume will be uploaded soon');
+            // Store the updated list in local storage
+            localStorage.setItem('userInfoList', JSON.stringify(userInfoList));
+
+            alert('User information stored successfully!');
 
             // Redirect to Google Drive link
             window.location.href = '#';

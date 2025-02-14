@@ -1,5 +1,5 @@
-document.getElementById("cv").addEventListener("click", function() {
-    alert("Resume will be uploaded Soon !"); 
+document.getElementById("insta").addEventListener("click", function() {
+    window.location.href = "login.html";
 });
 document.getElementById("abtme").addEventListener("click", function() {
     alert("Projects Will Be Uploaded Soon"); 

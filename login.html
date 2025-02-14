@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Resume</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="nav">
+        <div id="port">PORTFOLIO</div>
+        <div id="abtme"><a href="https://github.com/Adhikulkarn" id="abtME">GitHub</a></div>
+        <div id="HOME"><button id="home">HOME</button></div>
+    </div>
+    <div class="body">
+        <div class="logincontainer">
+            <div class="container" id="contain">
+                <p id="req">Please Enter your Email and details To get the Resume</p>
+                <img src="./img/icon.png" id="icon">
+                <input type="text" name="Email" placeholder="Email address" class="input" id="Email">
+                <input type="text" name="FirstName" placeholder="First Name" class="input" id="name1">
+                <input type="text" name="SecondName" placeholder="Second Name" class="input" id="name2">
+                <button id="get">Get Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('get').addEventListener('click', function() {
+            const email = document.getElementById('Email').value;
+            const firstName = document.getElementById('name1').value;
+            const secondName = document.getElementById('name2').value;
+
+            // Store the information in local storage
+            const userInfo = {
+                email: email,
+                firstName: firstName,
+                secondName: secondName,
+            };
+
+            localStorage.setItem('userInfo', JSON.stringify(userInfo));
+
+            alert('User information stored successfully!');
+
+            // Redirect to Google Drive link
+            window.location.href = '#';
+        });
+    </script>
+</body>
+</html>

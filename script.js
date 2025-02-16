@@ -1,5 +1,5 @@
 document.getElementById("cv").addEventListener("click", function() {
-    window.location.href = "login.html";
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSf4lp152DPSsfUrqYbnFBM39Z5de5JSBwOxrxuuAtglQCad6A/viewform?usp=sharing";
 });
 document.getElementById("abtme").addEventListener("click", function() {
     alert("Projects Will Be Uploaded Soon"); 

@@ -1,6 +1,6 @@
-document.getElementById("cv").addEventListener("click", function() {
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSf4lp152DPSsfUrqYbnFBM39Z5de5JSBwOxrxuuAtglQCad6A/viewform?usp=sharing";
-});
+// document.getElementById("cv").addEventListener("click", function() {
+//     window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScTlrH4B4iJYlIWbJ6R2dbv6iC3FTCKILHSa7ShRW1lDjTq5g/viewform?usp=header";
+// });
 document.getElementById("abtme").addEventListener("click", function() {
     alert("Projects Will Be Uploaded Soon"); 
 });
@@ -15,4 +15,7 @@ window.location.href = "mailto:adityask200615@gmail.com";
 });
 document.getElementById("insta").addEventListener("click", function() {
 window.location.href = "https://www.instagram.com/adhizoooo_";
+});
+document.getElementById("cv").addEventListener("click", function() {
+    alert("Resume Will Be Uploaded Soon"); 
 });

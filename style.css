@@ -242,6 +242,7 @@ a{
     border-radius: 15px;
     flex-direction: column;
     animation: borderGlow 3s infinite;
+    margin: 10px;
 }
 .information{
     margin: 20px;

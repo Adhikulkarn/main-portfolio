@@ -77,9 +77,12 @@ a{
     margin: 20px;
     transition: all 0.3s ease;
 }
-#cv:hover{
+/* #cv:hover{
     transform: scale(1.1);
     background-color: #2d9f99;
+} */
+#cv:active{
+    transform: scale(0.8);
 }
 #CV{
     margin-left: auto;
@@ -295,6 +298,9 @@ a{
 .img:hover{
     transform: scale(1.2);
     filter: drop-shadow(0 0 8px #58DDD6);
+}
+.img:active{
+    transform: scale(0.8);
 }
 #scl{
     margin: 10px;

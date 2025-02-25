@@ -2,12 +2,46 @@ body{
     background-color: black;
 }
 
+/* Adding animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes borderGlow {
+    0% { box-shadow: 0 0 5px #58DDD6; }
+    50% { box-shadow: 0 0 15px #58DDD6; }
+    100% { box-shadow: 0 0 5px #58DDD6; }
+}
+
 .body{
     padding: 0%;
     margin: 0%;
     display: flex;
     align-items: center;
     background-color: black;
+    animation: fadeIn 1s ease-in;
 }
 
 .nav{
@@ -15,13 +49,14 @@ body{
     background-color: black;
     height: 70px;
     align-items: center;
-    
+    animation: slideInFromTop 0.8s ease-out;
     /* min-width: 100%; */
 }
 #port{
     color: #58DDD6;
     font-size: 40px;
     margin: 20px;
+    animation: pulse 3s infinite;
 }
 #abtme{
     margin: 75px;
@@ -29,6 +64,7 @@ body{
 a{
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
 }
 #abtME:hover{
     color: #58DDD6;
@@ -39,14 +75,14 @@ a{
     border-radius: 10px;
     font-weight: bold;
     margin: 20px;
-    transition : all 0.3s ease;
+    transition: all 0.3s ease;
 }
 #cv:hover{
     transform: scale(1.1);
     background-color: #2d9f99;
 }
 #CV{
-    margin-left: auto   ;
+    margin-left: auto;
 }
 
 .body{
@@ -70,25 +106,30 @@ a{
 #intro1{
     color: white;
     font-size: 180%;
+    animation: slideInFromLeft 0.8s ease-out;
 }
 #intro2{
     color: #58DDD6;
     font-size: 200%;
     font-weight: bold;
+    animation: slideInFromRight 1s ease-out;
 }
 #intro3{
     color: white;
     font-size: 180%;
+    animation: slideInFromLeft 1.2s ease-out;
 }
 #intro4{
     color: #58DDD6;
     font-size: 200%;
     font-weight: bold;
+    animation: slideInFromRight 1.4s ease-out;
 }
 #intro5{
     color: #58DDD6;
     font-size: 200%;
     font-weight: bold;
+    animation: slideInFromLeft 1.6s ease-out;
 }
 
 .para{
@@ -98,6 +139,7 @@ a{
     position: relative;
     top: 15%;
     align-items: center;
+    animation: fadeIn 2s ease-in;
 }
 #paragraph{
     text-align: center;
@@ -107,6 +149,7 @@ a{
 .title1{
     position: relative;
     top: 20%;
+    animation: slideInFromLeft 1.5s ease-out;
 }
 #edutitle{
     font-size: 170%;
@@ -125,6 +168,7 @@ a{
     flex-wrap: wrap;
     border-radius: 15px;
     padding: 10px;
+    animation: borderGlow 3s infinite;
 }
 .box{
     margin: 20px;
@@ -134,11 +178,17 @@ a{
     flex-direction: column;
     background-color: white;
     opacity: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(88, 221, 214, 0.3);
 }
 #box1{
     height: 200px;
     width: 200px;
     border: 2px solid black;
+    animation: fadeIn 1.5s ease-in;
 }
 #b1{
     align-self: center;
@@ -156,17 +206,20 @@ a{
     height: 200px;
     width: 200px;
     border: 2px solid black;
+    animation: fadeIn 2s ease-in;
 }
 #box3{
     height: 200px;
     width: 200px;
     border: 2px solid black;
+    animation: fadeIn 2.5s ease-in;
 }
 
 .title2{
     display: flex;
     position: relative;
     top: 25%;
+    animation: slideInFromLeft 1.8s ease-out;
 }
 
 #intitle{
@@ -188,6 +241,7 @@ a{
     top: 30%;
     border-radius: 15px;
     flex-direction: column;
+    animation: borderGlow 3s infinite;
 }
 .information{
     margin: 20px;
@@ -199,6 +253,11 @@ a{
     opacity: 80%;
     max-width: 680px;
     border: 2px solid black;
+    animation: fadeIn 2.2s ease-in;
+    transition: transform 0.3s ease;
+}
+.information:hover {
+    transform: scale(1.02);
 }
 #clubinfo{
     margin: 10px;
@@ -214,6 +273,11 @@ a{
     opacity: 80%;
     max-width: 680px;
     border: 2px solid black;
+    animation: fadeIn 2.5s ease-in;
+    transition: transform 0.3s ease;
+}
+.information2:hover {
+    transform: scale(1.02);
 }
 #hack{
     margin: 10px;
@@ -221,12 +285,15 @@ a{
 .images{
     position: relative;
     top: 40%;
+    animation: fadeIn 3s ease-in;
 }
 .img{
     margin: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 .img:hover{
     transform: scale(1.2);
+    filter: drop-shadow(0 0 8px #58DDD6);
 }
 #scl{
     margin: 10px;

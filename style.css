@@ -277,7 +277,7 @@ a {
 }
 .prog{
     margin: 20px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 4%;
     display: flex;
     flex-direction: column;
@@ -474,7 +474,7 @@ a {
         max-width: 210px;
     }
     .prog{
-        min-width: 170px;
+        min-width: 140px;
     }
 }
 

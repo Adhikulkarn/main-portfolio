@@ -19,3 +19,7 @@ window.location.href = "https://www.instagram.com/adhizoooo_";
 document.getElementById("cv").addEventListener("click", function() {
     alert("Projects Will Be Uploaded Soon"); 
 });
+
+function home(){
+    window.location.href="index.html"
+}

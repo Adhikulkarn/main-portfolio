@@ -2,8 +2,8 @@
 //     window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScTlrH4B4iJYlIWbJ6R2dbv6iC3FTCKILHSa7ShRW1lDjTq5g/viewform?usp=header";
 // });
 document.getElementById("abtme").addEventListener("click", function() {
-    alert("Resume Will Be Uploaded Soon"); 
-});
+   window.location.href = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdHyzbfiPxbCSEDROEbe9EM2FZlIXClzZpu4KkJZs1xrxvz8A/formResponse";
+}); //Get Resume 
 document.getElementById("linkedin").addEventListener("click", function() {
 window.location.href = "https://www.linkedin.com/in/aditya-kulkarni-577344326";
 });

@@ -248,6 +248,7 @@ a {
     position: relative;
     top: 25%;
     animation: slideInFromLeft 1.8s ease-out;
+    margin: 50px 0 0 0;
 }
 
 #intitle {

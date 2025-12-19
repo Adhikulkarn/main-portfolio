@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (card.querySelector('.project-title').innerText === 'NurseLink') {
                 window.location.href = 'https://github.com/Adhikulkarn/NurseLink';
             }
+            if (card.querySelector('.project-title').innerText === 'Flash Master') {
+                window.location.href = 'https://flash-master-virid.vercel.app/';
+            }
         });
     });
 

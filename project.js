@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     projectCards.forEach(card => {
         card.addEventListener('click', function() {
             // Add your navigation or modal functionality here
-            console.log('Project card clicked');
+            if (card.querySelector('.project-title').innerText === 'NurseLink') {
+                window.location.href = 'https://github.com/Adhikulkarn/NurseLink';
+            }
         });
     });
 

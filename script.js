@@ -23,3 +23,7 @@ document.getElementById("cv").addEventListener("click", function() {
 function home(){
     window.location.href="index.html"
 }
+
+function project(){
+    window.location.href="projects.html"
+}

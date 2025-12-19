@@ -16,9 +16,6 @@ window.location.href = "mailto:adityask200615@gmail.com";
 document.getElementById("insta").addEventListener("click", function() {
 window.location.href = "https://www.instagram.com/adhizoooo_";
 });
-document.getElementById("cv").addEventListener("click", function() {
-    alert("Projects Will Be Uploaded Soon"); 
-});
 
 function home(){
     window.location.href="index.html"
